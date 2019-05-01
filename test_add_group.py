@@ -28,7 +28,7 @@ class UntitledTestCase(unittest.TestCase):
         wd.find_element_by_name("group_footer").clear()
         wd.find_element_by_name("group_footer").send_keys("Its a discription")
         wd.find_element_by_name("submit").click()
-        wd.find_element_by_link_text("groups").click()
+        wd.find_element_by_link_text("group page").click()
         wd.find_element_by_link_text("Logout").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys("admin")
