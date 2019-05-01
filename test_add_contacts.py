@@ -83,7 +83,7 @@ class test_add_contacts(unittest.TestCase):
                                  middlename="Petrovich",
                                  lastname="Vasiliy",
                                  nickname="PupOk",
-                                 path_to_photo="C:\\Users\\VanteyN\\Pictures\\sample.jpg",
+                                 path_to_photo="C:\\sample.jpg",
                                  title="Indian",
                                  company="SVJ",
                                  address="Moscow, Bronnaya, 15",
