@@ -29,11 +29,11 @@ class UntitledTestCase(unittest.TestCase):
         wd.find_element_by_name("new").click()
         # fill group forms
         wd.find_element_by_name("group_name").clear()
-        wd.find_element_by_name("group_name").send_keys("first_group")
+        wd.find_element_by_name("group_name").send_keys("Its test group")
         wd.find_element_by_name("group_header").clear()
         wd.find_element_by_name("group_header").send_keys("My first group for test")
         wd.find_element_by_name("group_footer").clear()
-        wd.find_element_by_name("group_footer").send_keys("Its a discription")
+        wd.find_element_by_name("group_footer").send_keys("Its a discription of this group")
         # submit group creation
         wd.find_element_by_name("submit").click()
 
