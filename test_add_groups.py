@@ -15,7 +15,7 @@ class UntitledTestCase(unittest.TestCase):
         self.login(wd, user_name="admin", password="secret")
         self.open_groups_page(wd)
         self.create_new_group(wd,
-                              name="Its test group",
+                              name="Its a test group",
                               header="My first group for test",
                               footer="Its a discription of this group")
         self.return_to_groups_page(wd)
