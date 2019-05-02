@@ -7,11 +7,8 @@ class ContactHelper:
     def __init__(self, app):
         self.app = app
 
-    def create(self, contact):
+    def fill_contact_forms(self, contact):
         wd = self.app.wd
-        # init contact creation
-        wd.find_element_by_link_text("add new").click()
-        # fill contact forms
         wd.find_element_by_name("firstname").clear()
         wd.find_element_by_name("firstname").send_keys(contact.firstname)
         wd.find_element_by_name("middlename").clear()
@@ -20,7 +17,6 @@ class ContactHelper:
         wd.find_element_by_name("lastname").send_keys(contact.lastname)
         wd.find_element_by_name("nickname").clear()
         wd.find_element_by_name("nickname").send_keys(contact.nickname)
-        # wd.find_element_by_name("photo").send_keys("C:\\Users\\VanteyN\\Pictures\\sample.jpg")
         wd.find_element_by_name("photo").send_keys(contact.path_to_photo)
         wd.find_element_by_name("title").clear()
         wd.find_element_by_name("title").send_keys(contact.title)
@@ -50,5 +46,28 @@ class ContactHelper:
         wd.find_element_by_name("phone2").send_keys(contact.second_phone)
         wd.find_element_by_name("notes").clear()
         wd.find_element_by_name("notes").send_keys(contact.notes)
+
+    def create(self, contact):
+        wd = self.app.wd
+        # init contact creation
+        wd.find_element_by_link_text("add new").click()
+        self.fill_contact_forms(contact=contact)
         # submit group creation
         wd.find_element_by_name("submit").click()
+
+    def delete_first_contact(self):
+        wd = self.app.wd
+        # check a first contact
+        wd.find_element_by_name("selected[]").click()
+        # submit contact deleting
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        # confirm deletion
+        wd.switch_to_alert().accept()
+
+    def edit_first_contact(self, contact):
+        wd = self.app.wd
+        # begin contact editing
+        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        self.fill_contact_forms(contact=contact)
+        # confirm edit
+        wd.find_element_by_xpath("//input[@value='Update']").click()

@@ -30,3 +30,36 @@ def test_add_contact(app):
                              notes="I have never been there")
     app.contact.create(sample_contact)
     app.session.logout()
+
+
+def test_delete_first_contact(app):
+    app.session.login(user_name="admin", password="secret")
+    app.contact.delete_first_contact()
+    app.session.logout()
+
+
+def test_edit_first_contact(app):
+    app.session.login(user_name="admin", password="secret")
+    new_contact = Contact(firstname="Rodriguez",
+                          middlename="Bending",
+                          lastname="Bender",
+                          nickname="Bending Unit 22",
+                          path_to_photo="C:\\bender.jpg",
+                          title="serial number 2716057",
+                          company="Planet Express",
+                          address="Hostel of robots, room 1001110111001",
+                          phone_home="+7(777)777-77-77",
+                          phone_mobile="01001010010011101",
+                          email="ilovecooking@sexmachine.org",
+                          homepage="bender-club.livejournal.com",
+                          birthday=Date(day=21,
+                                        month=12,
+                                        year=2993),
+                          anniversary_day=Date(day=1,
+                                               month=1,
+                                               year=3000),
+                          second_address="Wongs farm",
+                          second_phone="1001010001000110",
+                          notes="kill all humans")
+    app.contact.edit_first_contact(new_contact)
+    app.session.logout()
