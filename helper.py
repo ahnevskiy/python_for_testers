@@ -1,10 +1,12 @@
 __author__ = 'ahnevskiy'
 
+
 class Group:
     def __init__(self, name, header, footer):
         self.name = name
         self.header = header
         self.footer = footer
+
 
 class Contact:
     def __init__(self, firstname, middlename, lastname, nickname, path_to_photo, title, company, address, phone_home,
