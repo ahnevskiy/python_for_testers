@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'ahnevskiy'
 
-from model.objects import Contact
+from model.contact import Contact
 from model.useful import Date
 
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'ahnevskiy'
 
-from model.objects import Group
+from model.group import Group
 
 
 def test_add_group(app):
