@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1b0ddeff-14af-4c7e-a4d7-01326a8c2f12" name="Default Changelist" comment="add my first test">
       <change beforePath="$PROJECT_DIR$/test_add_contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_contacts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_add_groups.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_groups.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_add_groups.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-748">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="137">
+              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
               <folding>
                 <element signature="e#24#54#0" expanded="true" />
               </folding>
@@ -27,11 +28,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_add_contacts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="85" column="52" selection-start-line="85" selection-start-column="52" selection-end-line="85" selection-end-column="52" />
+            <state relative-caret-position="-131">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
               <folding>
                 <element signature="e#24#54#0" expanded="true" />
-                <element signature="e#551#923#0" />
                 <element signature="e#975#3697#0" />
               </folding>
             </state>
@@ -74,8 +74,8 @@
         <option value="$PROJECT_DIR$/test_add_group.py" />
         <option value="$PROJECT_DIR$/group.py" />
         <option value="$PROJECT_DIR$/helper.py" />
-        <option value="$PROJECT_DIR$/test_add_groups.py" />
         <option value="$PROJECT_DIR$/test_add_contacts.py" />
+        <option value="$PROJECT_DIR$/test_add_groups.py" />
       </list>
     </option>
   </component>
@@ -267,9 +267,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_add_contacts_test_add_contacts_test_add_contact - 2019.05.02 at 00h 25m 40s.xml">
-      <configuration name="pytest for test_add_contacts.test_add_contacts.test_add_contact" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_test_add_contacts_test_add_contacts_test_add_contact - 2019.05.02 at 00h 26m 59s.xml">
       <configuration name="pytest for test_add_contacts.test_add_contacts.test_add_contact" configurationId="tests" />
     </history-entry>
@@ -295,6 +292,9 @@
       <configuration name="pytest for test_add_contacts.test_add_contacts.test_add_contact" configurationId="tests" />
     </history-entry>
     <history-entry file="pytest_in_test_add_contacts_py - 2019.05.02 at 01h 09m 00s.xml">
+      <configuration name="pytest in test_add_contacts.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_add_contacts_py - 2019.05.02 at 01h 09m 56s.xml">
       <configuration name="pytest in test_add_contacts.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -358,8 +358,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_add_groups.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="137">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
           <folding>
             <element signature="e#24#54#0" expanded="true" />
           </folding>
@@ -368,11 +368,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_add_contacts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="85" column="52" selection-start-line="85" selection-start-column="52" selection-end-line="85" selection-end-column="52" />
+        <state relative-caret-position="-131">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
           <folding>
             <element signature="e#24#54#0" expanded="true" />
-            <element signature="e#551#923#0" />
             <element signature="e#975#3697#0" />
           </folding>
         </state>
