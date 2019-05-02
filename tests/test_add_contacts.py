@@ -1,17 +1,8 @@
 # -*- coding: utf-8 -*-
 __author__ = 'ahnevskiy'
 
-import pytest
 from model.objects import Contact
 from model.useful import Date
-from fixture.application import Application
-
-
-@pytest.fixture
-def app(request):
-    fixture = Application()
-    request.addfinalizer(fixture.destroy)
-    return fixture
 
 
 def test_add_contact(app):
