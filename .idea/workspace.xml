@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_add_groups.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+            <state relative-caret-position="103">
+              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding>
                 <element signature="e#24#54#0" expanded="true" />
               </folding>
@@ -25,14 +25,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_add_contacts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-131">
-              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            <state relative-caret-position="262">
+              <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
               <folding>
                 <element signature="e#24#54#0" expanded="true" />
-                <element signature="e#975#3697#0" />
+                <element signature="e#1058#3799#0" />
               </folding>
             </state>
           </provider>
@@ -128,7 +128,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_add_contacts.py">
+  <component name="RunManager" selected="Python tests.pytest in test_add_groups.py">
     <configuration name="pytest for test_add_contacts.test_add_contacts" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_for_testers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -157,6 +157,21 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_add_contacts.test_add_contacts.test_add_contact&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in python_for_testers" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_for_testers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in test_add_contacts.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -194,9 +209,11 @@
       <item itemvalue="Python tests.pytest in test_add_contacts.py" />
       <item itemvalue="Python tests.pytest for test_add_contacts.test_add_contacts.test_add_contact" />
       <item itemvalue="Python tests.pytest for test_add_contacts.test_add_contacts" />
+      <item itemvalue="Python tests.pytest in python_for_testers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in python_for_testers" />
         <item itemvalue="Python tests.pytest in test_add_contacts.py" />
         <item itemvalue="Python tests.pytest for test_add_contacts.test_add_contacts.test_add_contact" />
         <item itemvalue="Python tests.pytest for test_add_contacts.test_add_contacts" />
@@ -356,23 +373,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_add_groups.py">
+    <entry file="file://$PROJECT_DIR$/test_add_contacts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+        <state relative-caret-position="262">
+          <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
           <folding>
             <element signature="e#24#54#0" expanded="true" />
+            <element signature="e#1058#3799#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_add_contacts.py">
+    <entry file="file://$PROJECT_DIR$/test_add_groups.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        <state relative-caret-position="103">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding>
             <element signature="e#24#54#0" expanded="true" />
-            <element signature="e#975#3697#0" />
           </folding>
         </state>
       </provider>
