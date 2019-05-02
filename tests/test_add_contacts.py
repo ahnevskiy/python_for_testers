@@ -2,9 +2,9 @@
 __author__ = 'ahnevskiy'
 
 import pytest
-from helper import Contact
-from helper import Date
-from application import Application
+from model.objects import Contact
+from model.useful import Date
+from fixture.application import Application
 
 
 @pytest.fixture
@@ -15,7 +15,7 @@ def app(request):
 
 
 def test_add_contact(app):
-    app.login(user_name="admin", password="secret")
+    app.session.login(user_name="admin", password="secret")
     sample_contact = Contact(firstname="Pupkin",
                              middlename="Petrovich",
                              lastname="Vasiliy",
@@ -37,5 +37,5 @@ def test_add_contact(app):
                              second_address="Krasnogorsk, Bridge st, 19",
                              second_phone="+7(499)222-33-44",
                              notes="I have never been there")
-    app.create_contact(sample_contact)
-    app.logout()
+    app.contact.create(sample_contact)
+    app.session.logout()
