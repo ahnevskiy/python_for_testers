@@ -6,7 +6,6 @@ from model.useful import Date
 
 
 def test_add_contact(app):
-    app.session.login(user_name="admin", password="secret")
     sample_contact = Contact(firstname="Pupkin",
                              middlename="Petrovich",
                              lastname="Vasiliy",
@@ -29,17 +28,13 @@ def test_add_contact(app):
                              second_phone="+7(499)222-33-44",
                              notes="I have never been there")
     app.contact.create(sample_contact)
-    app.session.logout()
 
 
 def test_delete_first_contact(app):
-    app.session.login(user_name="admin", password="secret")
     app.contact.delete_first_contact()
-    app.session.logout()
 
 
 def test_edit_first_contact(app):
-    app.session.login(user_name="admin", password="secret")
     new_contact = Contact(firstname="Rodriguez",
                           middlename="Bending",
                           lastname="Bender",
@@ -61,5 +56,4 @@ def test_edit_first_contact(app):
                           second_address="Wongs farm",
                           second_phone="1001010001000110",
                           notes="kill all humans")
-    app.contact.edit_first_contact(new_contact)
-    app.session.logout()
+    app.contact.modify_first_contact(new_contact)
