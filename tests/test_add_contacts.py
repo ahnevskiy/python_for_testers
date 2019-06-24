@@ -31,10 +31,14 @@ def test_add_contact(app):
 
 
 def test_delete_first_contact(app):
+    if app.contact.count() == 0:
+        app.contact.create(Contact(firstname="test"))
     app.contact.delete_first_contact()
 
 
 def test_edit_first_contact(app):
+    if app.contact.count() == 0:
+        app.contact.create(Contact(firstname="test"))
     new_contact = Contact(firstname="Rodriguez",
                           middlename="Bending",
                           lastname="Bender",
