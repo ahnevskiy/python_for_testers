@@ -52,6 +52,11 @@ class ContactHelper:
         self.fill_contact_forms(contact)
         # submit group creation
         wd.find_element_by_name("submit").click()
+        self.return_to_home_page()
+
+    def return_to_home_page(self):
+        wd = self.app.wd
+        wd.find_element_by_link_text("home page").click()
 
     def delete_first_contact(self):
         wd = self.app.wd
@@ -61,6 +66,7 @@ class ContactHelper:
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         # confirm deletion
         wd.switch_to_alert().accept()
+        self.open_home_page()
 
     def modify_first_contact(self, contact):
         wd = self.app.wd
@@ -69,6 +75,7 @@ class ContactHelper:
         self.fill_contact_forms(contact=contact)
         # confirm edit
         wd.find_element_by_xpath("//input[@value='Update']").click()
+        self.return_to_home_page()
 
     def open_home_page(self):
         wd = self.app.wd
